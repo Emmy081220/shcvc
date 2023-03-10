@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Sacred Heart Computer and Vocational Center</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/feather.css">
+
+    <link rel="stylesheet" href="/assets/plugins/select2/css/select2.min.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <header class="header header-page">
+            <div class="header-fixed">
+                <%- include("includes/student-loggedIn-nav") %>
+            </div>
+        </header>
+
+
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-3 col-md-4 theiaStickySidebar">
+                        <div class="settings-widget dash-profile mb-3">
+                            <div class="settings-menu p-0">
+                                <div class="profile-bg">
+                                    <h5>Beginner</h5>
+                                    <img src="/assets/img/profile-bg.jpg" alt="">
+                                    <div class="profile-img">
+                                        <a href="student/student-profile"><img src="/assets/img/user/user11.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="profile-group">
+                                    <div class="profile-name text-center">
+                                        <h4><a href="student/student-profile">Rolands R</a></h4>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="go-dashboard text-center">
+                                        <a href="deposit-student-dashboard" class="btn btn-primary">Go to
+                                            Dashboard</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-widget account-settings">
+                            <div class="settings-menu">
+                                <h3>ACCOUNT SETTINGS</h3>
+                                <ul>
+                                    <li class="nav-item ">
+                                        <a href="student/setting-edit-profile" class="nav-link">
+                                            <i class="feather-settings"></i> Edit Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-security" class="nav-link">
+                                            <i class="feather-user"></i> Security
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-social-profile" class="nav-link">
+                                            <i class="feather-refresh-cw"></i> Social Profiles
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-notification" class="nav-link">
+                                            <i class="feather-bell"></i> Notifications
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-privacy" class="nav-link">
+                                            <i class="feather-lock"></i> Profile Privacy
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="student/setting-student-delete-profile" class="nav-link">
+                                            <i class="feather-trash-2"></i> Delete Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-accounts" class="nav-link">
+                                            <i class="feather-user"></i> Linked Accounts
+                                        </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="student/setting-student-referral" class="nav-link">
+                                            <i class="feather-user-plus"></i> Referrals
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="login" class="nav-link">
+                                            <i class="feather-power"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3>SUBSCRIPTION</h3>
+                                <ul>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-subscription" class="nav-link ">
+                                            <i class="feather-calendar"></i> My Subscriptions
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-billing" class="nav-link">
+                                            <i class="feather-credit-card"></i> Billing Info
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-payment" class="nav-link">
+                                            <i class="feather-credit-card"></i> Payment
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-invoice" class="nav-link">
+                                            <i class="feather-clipboard"></i> Invoice
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-9 col-md-8">
+                        <div class="settings-top-widget">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-6">
+                                    <div class="card stat-info net-earn">
+                                        <div class="card-body">
+                                            <span>Net Earnings</span>
+                                            <h3>$ 63,240</h3>
+                                            <p>Earning this month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6">
+                                    <div class="card stat-info bal">
+                                        <div class="card-body">
+                                            <span>Balance</span>
+                                            <h3>$ 8,530</h3>
+                                            <p>Earning this month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6">
+                                    <div class="card stat-info avg">
+                                        <div class="card-body">
+                                            <span>Avg Deal Size</span>
+                                            <h3>$ 2,600</h3>
+                                            <p>Earning this month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6">
+                                    <div class="card stat-info refer">
+                                        <div class="card-body">
+                                            <span>Referral Signups</span>
+                                            <h3>$ 783</h3>
+                                            <p>Earning this month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 d-flex">
+                                    <div class="card link-box flex-fill">
+                                        <div class="card-body">
+                                            <h3>Your Referral Link</h3>
+                                            <p>Plan your blog post by choosing a topic, creating an outline conduct
+                                                research, and checking facts</p>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control"
+                                                    value="https://dreamslmscourse.com/reffer/?refid=345re667877k9">
+                                            </div>
+                                            <a href="javascript:;">Copy link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 d-flex">
+                                    <div class="card withdraw-box flex-fill">
+                                        <div class="card-body">
+                                            <div
+                                                class="widra-your-money d-flex align-items-end justify-content-between">
+                                                <div>
+                                                    <h4>Withdraw Your Money to a Bank Account</h4>
+                                                    <p>Withdraw money securily to your bank account. Commision is $25
+                                                        per transaction under $50,000</p>
+                                                    <div class="hvr-sweep-to-right">
+                                                        <a href="javascript:;">Withdraw Money</a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="/assets/img/bank-image.png" alt="Withdraw money">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-widget">
+                            <div class="settings-inner-blk p-0">
+                                <div class="comman-space pb-0">
+                                    <div
+                                        class="filter-grp user-referred table-select-blk d-flex align-items-center justify-content-between">
+                                        <h3>Referred Users</h3>
+                                        <div class="filter-blk d-flex">
+                                            <div class="form-group select-form mb-0">
+                                                <select class="form-select select" id="datefilter" name="datefilterby">
+                                                    <option>Month</option>
+                                                    <option>Daily</option>
+                                                    <option>Week</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group select-form mb-0">
+                                                <select class="form-select select" id="filterpicker"
+                                                    name="filterpickerby">
+                                                    <option>Oct 2020</option>
+                                                    <option>Jan 2020</option>
+                                                    <option>Feb 2020</option>
+                                                    <option>Mar 2020</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="settings-referral-blk table-responsive">
+
+                                        <table class="table table-nowrap mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Referrals</th>
+                                                    <th>Referred ID</th>
+                                                    <th>URL</th>
+                                                    <th>&nbsp;</th>
+                                                    <th class="text-center">Visits</th>
+                                                    <th class="text-end">Total earned</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img1.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Guy Hawkins</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09341</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">10</td>
+                                                    <td class="text-end">$45.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img2.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Dianna Smiley</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09342</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">15</td>
+                                                    <td class="text-end">$75.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img3.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Guy Hawkins</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09343</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">20</td>
+                                                    <td class="text-end">$100.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img4.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Jacob Jones</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09344</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">1</td>
+                                                    <td class="text-end">$44.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img5.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Kristin Watson</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09345</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">5</td>
+                                                    <td class="text-end">$25.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img6.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Rivao Luke</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09346</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">500</td>
+                                                    <td class="text-end">$160.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img7.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Nia Sikhone</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09347</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">187</td>
+                                                    <td class="text-end">$150.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img8.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Xiaon Merry</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09348</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">10</td>
+                                                    <td class="text-end">$45.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img9.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Guy Hawkins</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09349</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">15</td>
+                                                    <td class="text-end">$10.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="student/student-profile"
+                                                            class="refer-avatar-blk d-flex align-items-center">
+                                                            <img src="/assets/img/students/refer-img10.png"
+                                                                class="rounded-circle me-2" alt="Referred User Info">
+                                                            <p>Dianna Smiley</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>09350</td>
+                                                    <td><span
+                                                            class="text-wrap">https://dreamslmscourse.com/reffer/?refid=345re667877k9</span>
+                                                    </td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-clipboard"></i></a></td>
+                                                    <td class="text-center">98</td>
+                                                    <td class="text-end">$10.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <%- include("includes/footer") %>
+
+    </div>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/plugins/select2/js/select2.min.js"></script>
+
+    <script src="/assets/plugins/feather/feather.min.js"></script>
+
+    <script src="/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+    <script src="/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

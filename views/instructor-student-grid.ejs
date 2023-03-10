@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Sacred Heart Computer and Vocational Center</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/feather.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <header class="header header-page">
+            <div class="header-fixed">
+                <%- include("includes/instructor-loggedIn-nav") %>
+            </div>
+        </header>
+
+
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
+                        <div class="settings-widget dash-profile">
+                            <div class="settings-menu p-0">
+                                <div class="profile-bg">
+                                    <h5>Beginner</h5>
+                                    <img src="/assets/img/instructor-profile-bg.jpg" alt="">
+                                    <div class="profile-img">
+                                        <a href="instructor/instructor-profile"><img src="/assets/img/user/user15.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="profile-group">
+                                    <div class="profile-name text-center">
+                                        <h4><a href="instructor/instructor-profile">Jenny Wilson</a></h4>
+                                        <p>Instructor</p>
+                                    </div>
+                                    <div class="go-dashboard text-center">
+                                        <a href="add-course" class="btn btn-primary">Create New Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-widget account-settings">
+                            <div class="settings-menu">
+                                <h3>DASHBOARD</h3>
+                                <ul>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-dashboard" class="nav-link">
+                                            <i class="feather-home"></i> My Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-course" class="nav-link">
+                                            <i class="feather-book"></i> My Courses
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-reviews" class="nav-link">
+                                            <i class="feather-star"></i> Reviews
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-earnings" class="nav-link">
+                                            <i class="feather-pie-chart"></i> Earnings
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-orders" class="nav-link">
+                                            <i class="feather-shopping-bag"></i> Orders
+                                        </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="instructor/instructor-student-grid" class="nav-link">
+                                            <i class="feather-users"></i> Students
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-payouts" class="nav-link">
+                                            <i class="feather-dollar-sign"></i> Payouts
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-tickets" class="nav-link">
+                                            <i class="feather-server"></i> Support Tickets
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="instructor-title">
+                                    <h3>ACCOUNT SETTINGS</h3>
+                                </div>
+                                <ul>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-edit-profile" class="nav-link ">
+                                            <i class="feather-settings"></i> Edit Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-security" class="nav-link">
+                                            <i class="feather-user"></i> Security
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-social-profiles" class="nav-link">
+                                            <i class="feather-refresh-cw"></i> Social Profiles
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-notification" class="nav-link">
+                                            <i class="feather-bell"></i> Notifications
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-profile-privacy" class="nav-link">
+                                            <i class="feather-lock"></i> Profile Privacy
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-delete-profile" class="nav-link">
+                                            <i class="feather-trash-2"></i> Delete Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-linked-account" class="nav-link">
+                                            <i class="feather-user"></i> Linked Accounts
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/" class="nav-link">
+                                            <i class="feather-power"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-9 col-lg-8 col-md-12">
+                        <div class="tak-instruct-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="settings-widget">
+                                        <div class="settings-inner-blk p-0">
+                                            <div class="sell-course-head student-meet-head comman-space border-0">
+                                                <div class="tak-head d-flex align-items-center">
+                                                    <div>
+                                                        <h3>Students</h3>
+                                                        <p>Meet people taking your course.</p>
+                                                    </div>
+                                                    <div class="view-icons">
+                                                        <a href="instructor/instructor-student-grid"
+                                                            class="grid-view active"><i class="feather-grid"></i></a>
+                                                        <a href="instructor/instructor-student-list" class="list-view"><i
+                                                                class="feather-list"></i></a>
+                                                    </div>
+                                                </div>
+                                                <form>
+                                                    <div class="student-search-form d-flex ">
+                                                        <div class="form-group mb-0">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Twitter Profile Name">
+                                                        </div>
+                                                        <div class="export-cvv-btn">
+                                                            <button class="btn btn-primary">Export CSV</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Wade Warren</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>United States</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>3/12/2020</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user3.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Dianna Smiley</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>Tunisia</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>15/12/2019</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user2.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Esther Howard</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>Spain</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>6/10/2020</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user5.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Guy Hawkins</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>United States</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>13/1/2020</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user6.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Jacob Jones</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>United Kingdom</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>2/6/2020</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user4.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Kristin Watson</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>Iceland</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>22/12/2020</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user11.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Rivao Luke</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>Brazil</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>3/12/2020</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user12.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Nia Sikhone</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>Italy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>10/12/2020</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
+                                    <div class="student-box flex-fill">
+                                        <div class="student-box-blks">
+                                            <div class="message-text-img">
+                                                <a href="javascript:;">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/icon/message-text.svg">
+                                                </a>
+                                            </div>
+                                            <div class="student-img">
+                                                <a href="student/student-profile">
+                                                    <img class="img-fluid" alt="Students Info"
+                                                        src="/assets/img/user/user13.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="student-content pb-0">
+                                                <h5><a href="student/student-profile">Xiaon Merry</a></h5>
+                                                <div class="loc-blk d-flex align-items-center justify-content-center">
+                                                    <i class="feather-map-pin me-2"></i>
+                                                    <p>France</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="enrol-student-foot">
+                                            <ul>
+                                                <li>Enrolled <span>3/12/2020</span></li>
+                                                <li>Progress
+                                                    <div class="instruct-stip d-flex align-items-center">
+                                                        <span>20%</span>
+                                                        <div class="course-stip progress-stip">
+                                                            <div
+                                                                class="progress-bar bg-success progress-bar-striped active-stip">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="pagination lms-page mt-0">
+                                        <li class="page-item prev">
+                                            <a class="page-link" href="javascript:void(0);" tabindex="-1"><i
+                                                    class="fas fa-angle-left"></i></a>
+                                        </li>
+                                        <li class="page-item first-page active">
+                                            <a class="page-link" href="javascript:void(0);">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">5</a>
+                                        </li>
+                                        <li class="page-item next">
+                                            <a class="page-link" href="javascript:void(0);"><i
+                                                    class="fas fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <%- include("includes/footer") %>
+
+    </div>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/js/jquery.waypoints.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+
+    <script src="/assets/plugins/feather/feather.min.js"></script>
+
+    <script src="/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+    <script src="/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

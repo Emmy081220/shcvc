@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Sacred Heart Computer and Vocational Center</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/feather/feather.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <header class="header header-page">
+            <div class="header-fixed">
+                <%- include("includes/student-loggedIn-nav") %>
+            </div>
+        </header>
+
+
+        <div class="course-student-header">
+            <div class="container">
+                <div class="student-group">
+                    <div class="course-group ">
+                        <div class="course-group-img d-flex">
+                            <a href="#"><img src="/assets/img/user/user11.jpg" alt="" class="img-fluid"></a>
+                            <div class="d-flex align-items-center">
+                                <div class="course-name">
+                                    <h4><a href="#">Rolands R</a><span>Beginner</span></h4>
+                                    <p>Student</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-share ">
+                            <a href="student/setting-edit-profile" class="btn btn-primary">Account Settings</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-student-list">
+                    <ul>
+                        <li><a href="deposit-student-dashboard">Dashboard</a></li>
+                        <li><a href="course-student">Courses</a></li>
+                        <li><a href="course-wishlist">Wishlists</a></li>
+                        <li><a href="course-message">Messages</a></li>
+                        <li><a href="purchase-history">Purchase history</a></li>
+                        <li><a class="active" href="deposit-student">Deposit</a></li>
+                        <li class="mb-0"><a href="transactions-student">Transactions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-12 col-md-12">
+                        <div class="settings-widget">
+                            <div class="settings-inner-blk p-0">
+                                <div class="comman-space pb-0">
+                                    <div
+                                        class="filter-grp ticket-grp d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h3>Deposit History</h3>
+                                        </div>
+                                        <div class="ticket-btn-grp">
+                                            <a href="javascript:;" data-bs-toggle="modal"
+                                                data-bs-target="#depositMethod">Deposit Money</a>
+                                        </div>
+                                    </div>
+                                    <div class="settings-tickets-blk table-responsive">
+
+                                        <table class="table table-nowrap mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Referred ID</th>
+                                                    <th>Gateway</th>
+                                                    <th>Amount</th>
+                                                    <th>Time</th>
+                                                    <th>Status</th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="javascript:;">K2WX7JJ6R1UA</a></td>
+                                                    <td>Stripe </td>
+                                                    <td><span class="text-success">+ $45.00</span></td>
+                                                    <td>2022-05-18 01:12 AM </td>
+                                                    <td><span class="badge info-low">Complete</span></td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-eye"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="javascript:;">9RVE1N1TA1H3</a></td>
+                                                    <td>Bank </td>
+                                                    <td><span class="text-success">+ $75.00</span></td>
+                                                    <td>2022-05-08 01:12 AM </td>
+                                                    <td><span class="badge info-low">Complete</span></td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-eye"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="javascript:;">C83Z7EQ4A1WX</a></td>
+                                                    <td>Stripe </td>
+                                                    <td><span class="text-success">+ $100.00</span></td>
+                                                    <td>2021-06-18 01:12 AM </td>
+                                                    <td><span class="badge info-low">Complete</span></td>
+                                                    <td><a href="javascript:;" class="btn-style"><i
+                                                                class="feather-eye"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <%- include("includes/footer") %>
+
+    </div>
+
+
+    <div class="modal-styles modal fade" id="depositMethod" tabindex="-1" aria-labelledby="addpaymentMethod"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addpaymentMethod">Deposit Method</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="addpaymethod-form add-course-info">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <div class="radio-with-img">
+                                        <p class="radio-deposit-item">
+                                            <input type="radio" name="deposittypes" id="deposit-type-one" value="true"
+                                                class="ng-valid ng-dirty ng-touched ng-empty" aria-invalid="false">
+                                            <label for="deposit-type-one">
+                                                <img src="/assets/img/deposit-01.jpg" alt="" class="img-fluid">
+                                                Bank
+                                            </label>
+                                        </p>
+                                        <p class="radio-deposit-item">
+                                            <input type="radio" name="deposittypes" id="deposit-type-two" value="false"
+                                                class="ng-valid ng-dirty ng-touched ng-empty" aria-invalid="false"
+                                                checked="">
+                                            <label for="deposit-type-two">
+                                                <img src="/assets/img/deposit-02.jpg" alt="" class="img-fluid">
+                                                Paypal
+                                            </label>
+                                        </p>
+                                        <p class="radio-deposit-item">
+                                            <input type="radio" name="deposittypes" id="deposit-type-three"
+                                                value="false" class="ng-valid ng-dirty ng-touched ng-empty"
+                                                aria-invalid="false">
+                                            <label for="deposit-type-three">
+                                                <img src="/assets/img/deposit-03.jpg" alt="" class="img-fluid">
+                                                Stripe
+                                            </label>
+                                        </p>
+                                        <p class="radio-deposit-item me-0">
+                                            <input type="radio" name="deposittypes" id="deposit-type-four" value="false"
+                                                class="ng-valid ng-dirty ng-touched ng-empty" aria-invalid="false">
+                                            <label for="deposit-type-four">
+                                                <img src="/assets/img/deposit-04.jpg" alt="" class="img-fluid">
+                                                Flutterwave - USD
+                                            </label>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group mb-0">
+                                        <label class="form-control-label">Enter Amount:</label>
+                                        <input type="text" class="form-control" placeholder="Amount">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer me-auto">
+                    <button type="button" class="btn btn-modal-style btn-theme">Submit</button>
+                    <button type="button" class="btn btn-modal-style btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Sacred Heart Computer and Vocational Center</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/feather.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <header class="header header-page">
+            <div class="header-fixed">
+                <%- include("includes/student-loggedIn-nav") %>
+            </div>
+        </header>
+
+
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-3 col-md-4 theiaStickySidebar">
+                        <div class="settings-widget dash-profile mb-3">
+                            <div class="settings-menu p-0">
+                                <div class="profile-bg">
+                                    <h5>Beginner</h5>
+                                    <img src="/assets/img/profile-bg.jpg" alt="">
+                                    <div class="profile-img">
+                                        <a href="student/student-profile"><img src="/assets/img/user/user11.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="profile-group">
+                                    <div class="profile-name text-center">
+                                        <h4><a href="student/student-profile">Rolands R</a></h4>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="go-dashboard text-center">
+                                        <a href="deposit-student-dashboard" class="btn btn-primary">Go to
+                                            Dashboard</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-widget account-settings">
+                            <div class="settings-menu">
+                                <h3>ACCOUNT SETTINGS</h3>
+                                <ul>
+                                    <li class="nav-item ">
+                                        <a href="student/setting-edit-profile" class="nav-link">
+                                            <i class="feather-settings"></i> Edit Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="student/setting-student-security" class="nav-link">
+                                            <i class="feather-user"></i> Security
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-social-profile" class="nav-link">
+                                            <i class="feather-refresh-cw"></i> Social Profiles
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-notification" class="nav-link">
+                                            <i class="feather-bell"></i> Notifications
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-privacy" class="nav-link">
+                                            <i class="feather-lock"></i> Profile Privacy
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-delete-profile" class="nav-link">
+                                            <i class="feather-trash-2"></i> Delete Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-accounts" class="nav-link">
+                                            <i class="feather-user"></i> Linked Accounts
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-referral" class="nav-link">
+                                            <i class="feather-user-plus"></i> Referrals
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="login" class="nav-link">
+                                            <i class="feather-power"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3>SUBSCRIPTION</h3>
+                                <ul>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-subscription" class="nav-link ">
+                                            <i class="feather-calendar"></i> My Subscriptions
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-billing" class="nav-link">
+                                            <i class="feather-credit-card"></i> Billing Info
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-payment" class="nav-link">
+                                            <i class="feather-credit-card"></i> Payment
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="student/setting-student-invoice" class="nav-link">
+                                            <i class="feather-clipboard"></i> Invoice
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-9 col-md-8">
+                        <div class="settings-widget profile-details">
+                            <div class="settings-menu p-0">
+                                <div class="profile-heading">
+                                    <h3>Security</h3>
+                                    <p>Edit your account settings and change your password here.</p>
+                                </div>
+                                <div class="checkout-form personal-address border-line">
+                                    <div class="personal-info-head">
+                                        <h4>Email Address</h4>
+                                        <p>Your current email address is <span><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="2a474b525d4f46466a4f524b475a464f04494547">[email&#160;protected]</a></span>
+                                        </p>
+                                    </div>
+                                    <form action="#">
+                                        <div class="new-address">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="form-control-label">New email address</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter your New email address">
+                                                    </div>
+                                                </div>
+                                                <div class="profile-share d-flex ">
+                                                    <button type="button" class="btn btn-success">Update</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="checkout-form personal-address">
+                                    <div class="personal-info-head">
+                                        <h4>Change Password</h4>
+                                        <p>We will email you a confirmation when changing your password, so please
+                                            expect that email after submitting.</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <form action="#">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Current password</label>
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Password</label>
+                                                    <div class="pass-group" id="passwordInput">
+                                                        <input type="password" class="form-control pass-input"
+                                                            placeholder="Enter your password">
+                                                    </div>
+                                                    <div class="password-strength" id="passwordStrength">
+                                                        <span id="poor"></span>
+                                                        <span id="weak"></span>
+                                                        <span id="strong"></span>
+                                                        <span id="heavy"></span>
+                                                    </div>
+                                                    <div id="passwordInfo"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Confirm New Password</label>
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                                <div class="update-profile save-password">
+                                                    <button type="button" class="btn btn-primary">Save Password</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <%- include("includes/footer") %>
+    </div>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/js/jquery.waypoints.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+
+    <script src="/assets/plugins/feather/feather.min.js"></script>
+
+    <script src="/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+    <script src="/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <script src="/assets/js/validation.js"></script>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

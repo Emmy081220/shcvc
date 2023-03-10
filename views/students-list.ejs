@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Sacred Heart Computer and Vocational Center</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/feather.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <header class="header header-page">
+            <div class="header-fixed">
+                <%- include("includes/student-loggedIn-nav") %>
+            </div>
+        </header>
+
+
+        <div class="breadcrumb-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-12">
+                        <div class="breadcrumb-list">
+                            <nav aria-label="breadcrumb" class="page-breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item">Pages</li>
+                                    <li class="breadcrumb-item">Students List</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="showing-list">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="view-icons">
+                                           
+                                            <a href="student/students-list" class="list-view active"><i
+                                                    class="feather-list"></i></a>
+                                        </div>
+                                        <div class="show-result">
+                                            <h4>Showing 1-9 of 50 results</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-lg-12">
+                                <div class="student-grid-blk">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-01.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Charles Dickens</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Brazil</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-02.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Gabriel Palmer</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Italy</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-03.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">James Lemire</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Louisiana</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-04.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Olivia Murphy</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>France</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-05.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Rebecca Swartz</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Iceland</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-06.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Betty Richards</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Louisiana</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-07.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Jeffrey Montgomery</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Brazil</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-08.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Brooke Hayes</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>United States</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-09.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Gertrude Shorter</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Louisiana</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-10.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">David Garza</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Tunisia</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-11.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Vivian Winders</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Louisiana</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="student-list flex-fill">
+                                                <div class="student-img">
+                                                    <a href="student/student-profile">
+                                                        <img class="img-fluid" alt=""
+                                                            src="/assets/img/students/student-12.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="student-content">
+                                                    <h5><a href="student/student-profile">Sean Leon</a></h5>
+                                                    <h6>Student</h6>
+                                                    <div class="student-info">
+                                                        <div class="loc-blk d-flex justify-content-center">
+                                                            <img src="/assets/img/students/loc-icon.svg" class="me-1"
+                                                                alt="">
+                                                            <p>Spain</p>
+                                                        </div>
+                                                        <ul class="list-unstyled inline-inline profile-info-social">
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="javascript:;">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="pagination lms-page">
+                                    <li class="page-item prev">
+                                        <a class="page-link" href="javascript:void(0);" tabindex="-1"><i
+                                                class="fas fa-angle-left"></i></a>
+                                    </li>
+                                    <li class="page-item first-page active">
+                                        <a class="page-link" href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">5</a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="javascript:void(0);"><i
+                                                class="fas fa-angle-right"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <%- include("includes/footer") %>
+
+    </div>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

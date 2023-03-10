@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Sacred Heart Computer and Vocational Center</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/feather.css">
+
+    <link rel="stylesheet" href="/assets/plugins/select2/css/select2.min.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <header class="header header-page">
+            <div class="header-fixed">
+                <%- include("includes/instructor-loggedIn-nav") %>
+            </div>
+        </header>
+
+
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
+                        <div class="settings-widget dash-profile">
+                            <div class="settings-menu p-0">
+                                <div class="profile-bg">
+                                    <h5>Beginner</h5>
+                                    <img src="/assets/img/instructor-profile-bg.jpg" alt="">
+                                    <div class="profile-img">
+                                        <a href="instructor/instructor-profile"><img src="/assets/img/user/user15.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="profile-group">
+                                    <div class="profile-name text-center">
+                                        <h4><a href="instructor/instructor-profile">Jenny Wilson</a></h4>
+                                        <p>Instructor</p>
+                                    </div>
+                                    <div class="go-dashboard text-center">
+                                        <a href="add-course" class="btn btn-primary">Create New Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-widget account-settings">
+                            <div class="settings-menu">
+                                <h3>DASHBOARD</h3>
+                                <ul>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-dashboard" class="nav-link">
+                                            <i class="feather-home"></i> My Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-course" class="nav-link">
+                                            <i class="feather-book"></i> My Courses
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-reviews" class="nav-link">
+                                            <i class="feather-star"></i> Reviews
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-earnings" class="nav-link">
+                                            <i class="feather-pie-chart"></i> Earnings
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-orders" class="nav-link">
+                                            <i class="feather-shopping-bag"></i> Orders
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-student-grid" class="nav-link">
+                                            <i class="feather-users"></i> Students
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-payouts" class="nav-link">
+                                            <i class="feather-dollar-sign"></i> Payouts
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-tickets" class="nav-link">
+                                            <i class="feather-server"></i> Support Tickets
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="instructor-title">
+                                    <h3>ACCOUNT SETTINGS</h3>
+                                </div>
+                                <ul>
+                                    <li class="nav-item ">
+                                        <a href="instructor/instructor-edit-profile" class="nav-link ">
+                                            <i class="feather-settings"></i> Edit Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-security" class="nav-link">
+                                            <i class="feather-user"></i> Security
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-social-profiles" class="nav-link">
+                                            <i class="feather-refresh-cw"></i> Social Profiles
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-notification" class="nav-link">
+                                            <i class="feather-bell"></i> Notifications
+                                        </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="instructor/instructor-profile-privacy" class="nav-link">
+                                            <i class="feather-lock"></i> Profile Privacy
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-delete-profile" class="nav-link">
+                                            <i class="feather-trash-2"></i> Delete Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="instructor/instructor-linked-account" class="nav-link">
+                                            <i class="feather-user"></i> Linked Accounts
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/" class="nav-link">
+                                            <i class="feather-power"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-9 col-md-8">
+                        <div class="settings-widget profile-details">
+                            <div class="settings-menu p-0">
+                                <div class="profile-heading">
+                                    <h3>Profile Privacy Settings</h3>
+                                    <p>Making your profile public allow other users to see what you have been learning
+                                        on Geeks.</p>
+                                </div>
+                                <div class="checkout-form personal-address add-course-info border-line">
+                                    <div class="personal-info-head">
+                                        <h4>Privacy levels</h4>
+                                        <p>Show your profile public and private.</p>
+                                    </div>
+                                    <form action="#">
+                                        <div class="new-address">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-0">
+                                                        <label class="form-label">Privacy levels</label>
+                                                        <select class="form-select select country-select"
+                                                            name="sellist1">
+                                                            <option>Choose</option>
+                                                            <option>Privacy level 1</option>
+                                                            <option>Privacy level 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="checkout-form personal-address secure-alert">
+                                    <div class="personal-info-head">
+                                        <h4>Profile settings</h4>
+                                        <p>These controls give you the ability to customize what areas of your profile
+                                            others are able to see.</p>
+                                    </div>
+                                    <div class="form-check form-switch check-on">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Updates from Classes You're Taking</label>
+                                    </div>
+                                    <div class="form-check form-switch check-on">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Updates from Teacher Discussions</label>
+                                    </div>
+                                    <div class="form-check form-switch check-on">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Personalized Class Recommendations</label>
+                                    </div>
+                                    <div class="form-check form-switch check-on">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Featured content</label>
+                                    </div>
+                                    <div class="form-check form-switch check-on">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Product updates</label>
+                                    </div>
+                                    <div class="form-check form-switch check-on mb-0">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Events and offers</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <%- include("includes/footer") %>
+
+    </div>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/plugins/select2/js/select2.min.js"></script>
+
+    <script src="/assets/plugins/feather/feather.min.js"></script>
+
+    <script src="/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+    <script src="/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

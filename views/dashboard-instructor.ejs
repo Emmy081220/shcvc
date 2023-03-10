@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Sacred Heart Computer and Vocational Center</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/feather.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <header class="header header-page">
+            <div class="header-fixed">
+                <%- include("includes/instructor-loggedIn-nav") %>
+            </div>
+        </header>
+
+
+        <div class="page-banner instructor-bg-blk">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="instructor-profile d-flex align-items-center">
+                            <div class="instructor-profile-pic">
+                                <a href="instructor/instructor-profile">
+                                    <img src="/assets/img/instructor/profile-avatar.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="instructor-profile-content">
+                                <h4><a href="instructor/instructor-profile">Jenny Wilson <span>Beginner</span></a></h4>
+                                <p>Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="instructor-profile-menu">
+                            <ul class="nav">
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="instructor-profile-menu-img">
+                                            <img src="/assets/img/icon/icon-25.svg" alt="">
+                                        </div>
+                                        <div class="instructor-profile-menu-content">
+                                            <h4>32</h4>
+                                            <p>Courses</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="instructor-profile-menu-img">
+                                            <img src="/assets/img/icon/icon-26.svg" alt="">
+                                        </div>
+                                        <div class="instructor-profile-menu-content">
+                                            <h4>11,604</h4>
+                                            <p>Total Students</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="instructor-profile-menu-img">
+                                            <img src="/assets/img/icon/icon-27.svg" alt="">
+                                        </div>
+                                        <div class="instructor-profile-menu-content">
+                                            <h4>12,230</h4>
+                                            <p>Reviews</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="instructor-profile-text">
+                            <p>I am an Innovation designer focussing on UX/UI based in Berlin. As a creative resident at
+                                Figma explored the city of the future and how new technologies like AI, voice control,
+                                and augmented reality will change our interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="page-content course-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card instructor-card">
+                            <div class="card-header">
+                                <h4>My Courses</h4>
+                                <a href="add-course" class="btn btn-dark">Create New Course</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="instructor-grid">
+                                    <div class="product-img">
+                                        <a href="course-details">
+                                            <img src="/assets/img/course/course-10.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="instructor-product-content">
+                                        <div class="head-course-title">
+                                            <h3 class="title"><a href="course-details">Information About UI/UX
+                                                    Design Degree</a></h3>
+                                        </div>
+                                        <div class="course-info d-flex align-items-center border-bottom-0 pb-0">
+                                            <div class="rating-img d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-01.svg" alt="">
+                                                <p>12+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-02.svg" alt="">
+                                                <p>9hr 30min</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating mb-0">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructor-grid">
+                                    <div class="product-img">
+                                        <a href="course-details">
+                                            <img src="/assets/img/course/course-11.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="instructor-product-content">
+                                        <div class="head-course-title">
+                                            <h3 class="title"><a href="course-details">Wordpress for Beginners -
+                                                    Master Wordpress Quickly</a></h3>
+                                        </div>
+                                        <div class="course-info d-flex align-items-center border-bottom-0 pb-0">
+                                            <div class="rating-img d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-01.svg" alt="">
+                                                <p>10+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-02.svg" alt="">
+                                                <p>7hr 20min</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating mb-0">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span class="d-inline-block average-rating"><span>4.2</span> (20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructor-grid">
+                                    <div class="product-img">
+                                        <a href="course-details">
+                                            <img src="/assets/img/course/course-12.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="instructor-product-content">
+                                        <div class="head-course-title">
+                                            <h3 class="title"><a href="course-details">Sketch from A to Z (2022):
+                                                    Become an app designer</a></h3>
+                                        </div>
+                                        <div class="course-info d-flex align-items-center border-bottom-0 pb-0">
+                                            <div class="rating-img d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-01.svg" alt="">
+                                                <p>05+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-02.svg" alt="">
+                                                <p>8hr 00min</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating mb-0">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span class="d-inline-block average-rating"><span>4.0</span> (10)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructor-grid">
+                                    <div class="product-img">
+                                        <a href="course-details">
+                                            <img src="/assets/img/course/course-13.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="instructor-product-content">
+                                        <div class="head-course-title">
+                                            <h3 class="title"><a href="course-details">Learn Angular Fundamentals
+                                                    From beginning to advance lavel</a></h3>
+                                        </div>
+                                        <div class="course-info d-flex align-items-center border-bottom-0 pb-0">
+                                            <div class="rating-img d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-01.svg" alt="">
+                                                <p>30+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-02.svg" alt="">
+                                                <p>10hr 30min</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating mb-0">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span class="d-inline-block average-rating"><span>4.3</span> (25)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructor-grid">
+                                    <div class="product-img">
+                                        <a href="course-details">
+                                            <img src="/assets/img/course/course-14.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="instructor-product-content">
+                                        <div class="head-course-title">
+                                            <h3 class="title"><a href="course-details">Build Responsive Real World
+                                                    Websites with HTML5 and CSS3</a></h3>
+                                        </div>
+                                        <div class="course-info d-flex align-items-center border-bottom-0 pb-0">
+                                            <div class="rating-img d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-01.svg" alt="">
+                                                <p>20+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-02.svg" alt="">
+                                                <p>7hr 00min</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating mb-0">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructor-grid mb-0">
+                                    <div class="product-img">
+                                        <a href="course-details">
+                                            <img src="/assets/img/course/course-15.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="instructor-product-content">
+                                        <div class="head-course-title">
+                                            <h3 class="title"><a href="course-details">C# Developers Double Your
+                                                    Coding Speed with Visual Studio</a></h3>
+                                        </div>
+                                        <div class="course-info d-flex align-items-center border-bottom-0 pb-0">
+                                            <div class="rating-img d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-01.svg" alt="">
+                                                <p>50+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center">
+                                                <img src="/assets/img/icon/icon-02.svg" alt="">
+                                                <p>10hr 30min</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating mb-0">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span class="d-inline-block average-rating"><span>4.5</span> (30)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <%- include("includes/footer") %>
+
+    </div>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/js/jquery.waypoints.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
